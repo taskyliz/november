@@ -11,6 +11,7 @@
     ./programs/starship.nix
     ./programs/git.nix
     ./programs/helix
+    ./programs/tmux.nix
   ];
 
   home.username = "tasky";
