@@ -1,44 +1,52 @@
 { pkgs, ... }:
 
 {
-  home.packages = [
+  home.packages = with pkgs; [
     # Nix
-    pkgs.home-manager
-    pkgs.direnv
-    pkgs.nixfmt-rfc-style
+    home-manager
+    direnv
+    nixfmt-rfc-style
 
     # Development
-    pkgs.rustup
-    pkgs.pnpm
-    pkgs.uv
-    pkgs.bun
-    pkgs.nodejs_22
-    pkgs.go
+    rustup
+    pnpm
+    uv
+    bun
+    nodejs_22
+    go
+
+    # Language Servers
+    typescript-language-server
+    nil
 
     # CLI Tools
-    pkgs.xh
-    pkgs.gh
-    pkgs.bat
-    pkgs.lazygit
-    pkgs.btop
-    pkgs.tokei
-    pkgs.dust
-    pkgs.lsd
-    pkgs.jq
-    pkgs.fd
-    pkgs.fzf
-    pkgs.fastfetch
-    pkgs.zoxide
+    xh
+    gh
+    bat
+    lazygit
+    btop
+    tokei
+    dust
+    lsd
+    jq
+    fd
+    fzf
+    fastfetch
+    zoxide
+    ripgrep
+    tombi
+    zoxide
+    scooter
 
     # Editors
-    pkgs.neovim
-    pkgs.helix
+    neovim
+    helix
 
     # Shell
-    pkgs.starship
+    starship
 
     # AI Tools
-    pkgs.claude-code
-    pkgs.github-copilot-cli
+    claude-code
+    github-copilot-cli
   ];
 }

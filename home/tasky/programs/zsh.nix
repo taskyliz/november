@@ -19,6 +19,7 @@
       lg = "lazygit";
       p = "pnpm";
       g = "git";
+      c = "clear";
       dust = "dust -r";
       hm = "nix run '.#homeConfigurations.tasky.activationPackage'";
     };
@@ -37,6 +38,7 @@
       bindkey '^e' autosuggest-toggle
 
       eval "$(starship init zsh)"
+      eval "$(zoxide init zsh)"
 
       # Load secrets if available
       [ -f ~/.secrets/anthropic.env ] && source ~/.secrets/anthropic.env

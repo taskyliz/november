@@ -6,6 +6,16 @@
     C-o = ":config-open";
     C-r = ":config-reload";
 
+    # Lazygit integration
+    C-g = [
+      ":write-all"
+      ":new"
+      ":insert-output lazygit"
+      ":buffer-close!"
+      ":redraw"
+      ":reload-all"
+    ];
+
     # Some nice Helix stuff
     C-h = "select_prev_sibling";
     C-j = "shrink_selection";
