@@ -37,6 +37,7 @@
     tombi
     zoxide
     scooter
+    aria2
 
     # Editors
     neovim
