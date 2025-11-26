@@ -38,6 +38,7 @@
     zoxide
     scooter
     aria2
+    graphite-cli
 
     # Editors
     neovim
