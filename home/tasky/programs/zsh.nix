@@ -22,6 +22,14 @@
       c = "clear";
       dust = "dust -r";
       hm = "nix run '.#homeConfigurations.tasky.activationPackage'";
+
+      # Tmux aliases
+      tn = "tmux new-session -s";
+      ta = "tmux attach-session -t";
+      tl = "tmux list-sessions";
+      tk = "tmux kill-session -t";
+      td = "tmux detach";
+      ts = "tmux switch-client -t";
     };
 
     initContent = ''

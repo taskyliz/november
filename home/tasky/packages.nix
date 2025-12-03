@@ -14,10 +14,14 @@
     bun
     nodejs_22
     go
+    zig
+    dotnet-sdk_8
 
     # Language Servers
     typescript-language-server
     nil
+    zls # Zig Language Server
+    fsautocomplete # F# Language Server
 
     # CLI Tools
     xh
