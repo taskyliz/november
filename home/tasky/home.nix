@@ -23,4 +23,8 @@
     # for ssh
     COLORTERM = "truecolor";
   };
+
+  home.sessionPath = [
+    "/home/tasky/.bun/bin"
+  ];
 }

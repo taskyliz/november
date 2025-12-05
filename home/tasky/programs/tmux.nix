@@ -20,7 +20,7 @@
     terminal = "tmux-256color";
 
     # Increase scrollback buffer size
-    historyLimit = 50000;
+    historyLimit = 5000000;
 
     # Faster escape time (better for vim/neovim)
     escapeTime = 0;

@@ -16,12 +16,17 @@
     go
     zig
     dotnet-sdk_8
+    bacon
+    kotlin
+    kotlin-native
+    gradle
 
     # Language Servers
     typescript-language-server
     nil
     zls # Zig Language Server
     fsautocomplete # F# Language Server
+    kotlin-language-server
 
     # CLI Tools
     xh
