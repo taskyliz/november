@@ -5,8 +5,25 @@
     theme = "carbon";
 
     editor = {
+      auto-format = true;
+      cursorline = true;
+      gutters = [ "diff" "line-numbers" "spacer" "spacer" ];
+      true-color = true;
       line-number = "relative";
       completion-trigger-len = 2;
+
+      auto-save = {
+        after-delay.enable = true;
+        focus-lost = true;
+      };
+
+      soft-wrap = {
+        enable = true;
+      };
+
+      file-picker = {
+        hidden = false;
+      };
 
       cursor-shape = {
         insert = "bar";
@@ -70,6 +87,8 @@
 
       lsp = {
         display-messages = true;
+        display-inlay-hints = true;
+        display-progress-messages = true;
       };
     };
   };

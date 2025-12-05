@@ -48,6 +48,7 @@
     scooter
     aria2
     graphite-cli
+    infisical
 
     # Editors
     neovim

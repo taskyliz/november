@@ -34,7 +34,7 @@
 
     initContent = ''
       bindkey -v
-      setopt autocd extendedglob nomatch notify
+      setopt autocd nomatch notify
       setopt HIST_FIND_NO_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS
       setopt INC_APPEND_HISTORY SHARE_HISTORY
       unsetopt beep
