@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     # Nix
     home-manager
-    direnv
+    quickenv
     nixfmt-rfc-style
 
     # Development
@@ -20,6 +20,21 @@
     kotlin
     kotlin-native
     gradle
+    crystal
+    sqlite
+    llvmPackages_19.libclang
+    llvmPackages_19.llvm
+    sccache
+    mold
+    jdk
+    deno
+    
+    # Profiling & Benchmarking
+    hyperfine
+    samply
+    linuxPackages.perf
+    heaptrack
+    cargo-flamegraph
 
     # Language Servers
     typescript-language-server
@@ -44,11 +59,15 @@
     zoxide
     ripgrep
     tombi
-    zoxide
     scooter
     aria2
     graphite-cli
     infisical
+    glow
+    rsync
+    cloudflared
+    filebrowser
+    git-town
 
     # Editors
     neovim
@@ -56,9 +75,13 @@
 
     # Shell
     starship
+    zellij
 
     # AI Tools
     claude-code
     github-copilot-cli
+    amp-cli
+    opencode
+    codex
   ];
 }

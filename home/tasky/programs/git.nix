@@ -21,12 +21,6 @@
         rebase = true;
         ff = "only";
       };
-      credential."https://github.com" = {
-        helper = "!/home/tasky/.nix-profile/bin/gh auth git-credential";
-      };
-      credential."https://gist.github.com" = {
-        helper = "!/home/tasky/.nix-profile/bin/gh auth git-credential";
-      };
     };
   };
 }

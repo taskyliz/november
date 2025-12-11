@@ -30,6 +30,11 @@
       tk = "tmux kill-session -t";
       td = "tmux detach";
       ts = "tmux switch-client -t";
+
+      # Zellij aliases
+      zn = "zellij --session";
+      za = "zellij attach";
+      zl = "zellij list-sessions";
     };
 
     initContent = ''

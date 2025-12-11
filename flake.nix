@@ -27,6 +27,11 @@
         config = {
           allowUnfree = true;
         };
+        overlays = [
+          (final: prev: {
+            quickenv = final.callPackage ./pkgs/quickenv.nix { };
+          })
+        ];
       };
     in
     {

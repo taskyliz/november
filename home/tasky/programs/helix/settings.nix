@@ -7,7 +7,12 @@
     editor = {
       auto-format = true;
       cursorline = true;
-      gutters = [ "diff" "line-numbers" "spacer" "spacer" ];
+      gutters = [
+        "diff"
+        "line-numbers"
+        "spacer"
+        "spacer"
+      ];
       true-color = true;
       line-number = "relative";
       completion-trigger-len = 2;

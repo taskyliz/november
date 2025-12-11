@@ -43,21 +43,35 @@
     language = [
       {
         name = "typescript";
-        file-types = [ "ts" "tsx" ];
+        file-types = [
+          "ts"
+          "tsx"
+        ];
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "typescript" ];
+          args = [
+            "--parser"
+            "typescript"
+          ];
         };
         scope = "source.typescript";
       }
       {
         name = "javascript";
-        file-types = [ "js" "jsx" "mjs" "cjs" ];
+        file-types = [
+          "js"
+          "jsx"
+          "mjs"
+          "cjs"
+        ];
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "typescript" ];
+          args = [
+            "--parser"
+            "typescript"
+          ];
         };
         scope = "source.javascript";
       }
@@ -67,7 +81,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "css" ];
+          args = [
+            "--parser"
+            "css"
+          ];
         };
         scope = "source.css";
       }
@@ -77,7 +94,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "scss" ];
+          args = [
+            "--parser"
+            "scss"
+          ];
         };
         scope = "source.scss";
       }
@@ -87,7 +107,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "less" ];
+          args = [
+            "--parser"
+            "less"
+          ];
         };
         scope = "source.less";
       }
@@ -97,7 +120,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "html" ];
+          args = [
+            "--parser"
+            "html"
+          ];
         };
         scope = "source.html";
       }
@@ -107,7 +133,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "json" ];
+          args = [
+            "--parser"
+            "json"
+          ];
         };
         scope = "source.json";
       }
@@ -117,7 +146,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "yaml" ];
+          args = [
+            "--parser"
+            "yaml"
+          ];
         };
         scope = "source.yaml";
       }
@@ -127,7 +159,10 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "markdown" ];
+          args = [
+            "--parser"
+            "markdown"
+          ];
         };
         scope = "source.markdown";
       }
@@ -137,9 +172,17 @@
         auto-format = true;
         formatter = {
           command = "prettier";
-          args = [ "--parser" "vue" ];
+          args = [
+            "--parser"
+            "vue"
+          ];
         };
-        language-servers = [ "vue-language-server" "typescript-language-server" "vscode-html-language-server" "vscode-css-language-server" ];
+        language-servers = [
+          "vue-language-server"
+          "typescript-language-server"
+          "vscode-html-language-server"
+          "vscode-css-language-server"
+        ];
         scope = "source.vue";
       }
       {
