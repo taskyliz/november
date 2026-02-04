@@ -11,6 +11,13 @@
       repo = "home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    llm-agents.url = "github:numtide/llm-agents.nix";
+  };
+
+  nixConfig = {
+    extra-substituters = [ "https://cache.numtide.com" ];
+    extra-trusted-public-keys = [ "niks3.numtide.com-1:DTx8wZduET09hRmMtKdQDxNNthLQETkc/yaX7M4qK0g=" ];
   };
 
   outputs =
@@ -18,6 +25,7 @@
       self,
       nixpkgs,
       home-manager,
+      llm-agents,
       ...
     }:
     let
@@ -33,11 +41,15 @@
           })
         ];
       };
+      llm-agents-pkgs = llm-agents.packages.${system};
     in
     {
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.nixfmt-tree;
       homeConfigurations.tasky = home-manager.lib.homeManagerConfiguration {
         pkgs = pkgs;
+        extraSpecialArgs = {
+          inherit llm-agents-pkgs;
+        };
         modules = [
           ./home/tasky/home.nix
         ];

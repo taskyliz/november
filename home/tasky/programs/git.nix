@@ -21,6 +21,10 @@
         rebase = true;
         ff = "only";
       };
+
+      credential = {
+        helper = "store";
+      };
     };
   };
 }

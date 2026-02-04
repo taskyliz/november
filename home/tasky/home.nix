@@ -24,6 +24,7 @@
     EDITOR = "hx";
     # for ssh
     COLORTERM = "truecolor";
+    NPM_CONFIG_PREFIX = "/home/tasky/.npm-global";
     LIBCLANG_PATH = "${pkgs.llvmPackages_19.libclang.lib}/lib";
     LLVM_CONFIG_PATH = "${pkgs.llvmPackages_19.llvm.dev}/bin/llvm-config";
     LD_LIBRARY_PATH = "${pkgs.llvmPackages_19.llvm.lib}/lib";
@@ -33,5 +34,6 @@
     "/home/tasky/.bun/bin"
     "/home/tasky/.local/bin"
     "/home/tasky/.cargo/bin"
+    "/home/tasky/.npm-global/bin"
   ];
 }

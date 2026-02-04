@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, llm-agents-pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -28,7 +28,9 @@
     mold
     jdk
     deno
-    
+    jujutsu
+    lazyjj
+
     # Profiling & Benchmarking
     hyperfine
     samply
@@ -78,10 +80,10 @@
     zellij
 
     # AI Tools
-    claude-code
-    github-copilot-cli
-    amp-cli
-    opencode
-    codex
+    llm-agents-pkgs.amp
+    llm-agents-pkgs.claude-code
+    llm-agents-pkgs.codex
+    llm-agents-pkgs.opencode
+    llm-agents-pkgs.tuicr
   ];
 }
