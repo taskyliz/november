@@ -44,8 +44,11 @@
     zls # Zig Language Server
     fsautocomplete # F# Language Server
     kotlin-language-server
+    vscode-langservers-extracted # HTML/CSS/JSON/ESLint LSPs
+    nodePackages.prettier
 
     # CLI Tools
+    xclip
     xh
     gh
     bat

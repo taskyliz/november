@@ -50,7 +50,6 @@
       bindkey '^k' autosuggest-accept
       bindkey '^e' autosuggest-toggle
 
-      eval "$(starship init zsh)"
       eval "$(zoxide init zsh)"
 
       # Load secrets if available
