@@ -176,6 +176,11 @@
 
       # Enable clipboard integration
       set -g set-clipboard on
+
+      # Amp CLI compatibility
+      set -g allow-passthrough all
+      set -ga terminal-features ",*:hyperlinks"
+      set -s extended-keys on
     '';
   };
 }
