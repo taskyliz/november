@@ -22,10 +22,13 @@
     gradle
     crystal
     sqlite
+    glibc.dev
+    (lib.hiPrio llvmPackages_19.clang)
     llvmPackages_19.libclang
     llvmPackages_19.llvm
     sccache
     mold
+    buck2
     jdk
     deno
     jujutsu
@@ -42,6 +45,8 @@
     typescript-language-server
     nil
     zls # Zig Language Server
+    ziglint
+    zigdoc
     fsautocomplete # F# Language Server
     kotlin-language-server
     vscode-langservers-extracted # HTML/CSS/JSON/ESLint LSPs

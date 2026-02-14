@@ -38,6 +38,8 @@
         overlays = [
           (final: prev: {
             quickenv = final.callPackage ./pkgs/quickenv.nix { };
+            ziglint = final.callPackage ./pkgs/ziglint.nix { };
+            zigdoc = final.callPackage ./pkgs/zigdoc.nix { };
           })
         ];
       };
