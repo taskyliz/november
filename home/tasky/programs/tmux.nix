@@ -136,9 +136,9 @@
       set -g status-left-length 40
       set -g status-left '#[fg=#89b4fa,bold] #S #[default]│ '
 
-      # Right status: continuum status | date and time
+      # Right status
       set -g status-right-length 80
-      set -g status-right '#{continuum_status} │ #[fg=#f38ba8]%Y-%m-%d #[fg=#89b4fa]%H:%M '
+      set -g status-right '#{continuum_status} '
 
       # Window status format
       set -g window-status-format ' #I:#W#F '
