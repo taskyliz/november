@@ -41,7 +41,7 @@
 
   programs.difftastic = {
     enable = true;
-    git.enable = true;
+    #    git.enable = true;
 
     # display = "inline"; # default is better imo, I think
   };

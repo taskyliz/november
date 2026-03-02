@@ -21,6 +21,12 @@
         rebase = true;
         ff = "only";
       };
+      init = {
+        defaultBranch = "trunk";
+      };
+      push = {
+        autoSetupRemote = true;
+      };
 
       credential = {
         helper = "store";

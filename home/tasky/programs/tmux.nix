@@ -161,6 +161,9 @@
       set -ga terminal-overrides ",*256col*:Tc"
       set -ga terminal-overrides ",xterm-256color:Tc"
 
+      # Advertise E3 (clear scrollback) so CSI 3J works correctly through tmux.
+      set -ga terminal-overrides ",*:E3=\E[3J"
+
       # Enable cursor shape changes in neovim
       set -ga terminal-overrides ',*:Ss=\E[%p1%d q:Se=\E[2 q'
 

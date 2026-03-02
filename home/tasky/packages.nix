@@ -5,7 +5,7 @@
     # Nix
     home-manager
     quickenv
-    nixfmt-rfc-style
+    nixfmt
 
     # Development
     rustup
@@ -20,8 +20,6 @@
     kotlin
     kotlin-native
     gradle
-    crystal
-    sqlite
     glibc.dev
     (lib.hiPrio llvmPackages_19.clang)
     llvmPackages_19.libclang
@@ -37,7 +35,7 @@
     # Profiling & Benchmarking
     hyperfine
     samply
-    linuxPackages.perf
+    perf
     heaptrack
     cargo-flamegraph
 
