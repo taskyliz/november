@@ -38,6 +38,10 @@
     };
 
     initContent = ''
+      if [[ -n "''${BINDGEN_EXTRA_CLANG_ARGS:-}" ]]; then
+        export BINDGEN_EXTRA_CLANG_ARGS="''${BINDGEN_EXTRA_CLANG_ARGS//--resource-dir=/-resource-dir=}"
+      fi
+
       bindkey -v
       setopt autocd nomatch notify
       setopt HIST_FIND_NO_DUPS HIST_IGNORE_ALL_DUPS HIST_SAVE_NO_DUPS

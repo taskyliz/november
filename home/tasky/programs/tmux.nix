@@ -184,6 +184,7 @@
       set -g allow-passthrough all
       set -ga terminal-features ",*:hyperlinks"
       set -s extended-keys on
+      set -g extended-keys-format csi-u
     '';
   };
 }

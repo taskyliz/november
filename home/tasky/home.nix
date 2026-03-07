@@ -30,6 +30,7 @@
     LLVM_CONFIG_PATH = "${pkgs.llvmPackages_19.llvm.dev}/bin/llvm-config";
     LD_LIBRARY_PATH = "${pkgs.llvmPackages_19.llvm.lib}/lib";
     BINDGEN_EXTRA_CLANG_ARGS = "-resource-dir=${pkgs.llvmPackages_19.libclang.lib}/lib/clang/19";
+    BINDGEN_EXTRA_CLANG_ARGS_x86_64_unknown_linux_gnu = "-resource-dir=${pkgs.llvmPackages_19.libclang.lib}/lib/clang/19";
   };
 
   home.sessionPath = [

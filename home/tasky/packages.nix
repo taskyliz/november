@@ -31,6 +31,7 @@
     deno
     jujutsu
     lazyjj
+    llama-cpp
 
     # Profiling & Benchmarking
     hyperfine
@@ -38,6 +39,12 @@
     perf
     heaptrack
     cargo-flamegraph
+    cargo-nextest
+    valgrind
+    bpftrace
+    sysstat
+    smem
+    gnuplot
 
     # Language Servers
     typescript-language-server
