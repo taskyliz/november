@@ -7,7 +7,10 @@
     settings = {
       gui = {
         theme = {
-          activeBorderColor = [ "#89b4fa" "bold" ];
+          activeBorderColor = [
+            "#89b4fa"
+            "bold"
+          ];
           inactiveBorderColor = [ "#a6adc8" ];
           optionsTextColor = [ "#89b4fa" ];
           selectedLineBgColor = [ "#313244" ];
@@ -15,9 +18,14 @@
           cherryPickedCommitFgColor = [ "#89b4fa" ];
           unstagedChangesColor = [ "#f38ba8" ];
           defaultFgColor = [ "#cdd6f4" ];
-          searchingActiveBorderColor = [ "#f9e2af" "bold" ];
+          searchingActiveBorderColor = [
+            "#f9e2af"
+            "bold"
+          ];
         };
 
+        showRandomTip = false;
+        showCommandLog = false;
         showFileTree = true;
         showRootItemInFileTree = false;
         nerdFontsVersion = "3";
@@ -29,6 +37,10 @@
           pattern = "^(feature|fix|docs|chore|refactor|test|perf|ci|build|revert)\\/(.+)$";
           replace = "[$1/$2] ";
         }
+      ];
+
+      git.pagers = [
+        { pager = "delta --dark --paging=never"; }
       ];
 
       customCommands = [

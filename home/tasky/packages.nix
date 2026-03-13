@@ -32,6 +32,7 @@
     jujutsu
     lazyjj
     llama-cpp
+    delta
 
     # Profiling & Benchmarking
     hyperfine

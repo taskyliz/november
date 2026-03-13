@@ -145,7 +145,7 @@
       set -g window-status-current-format '#[fg=#89b4fa,bold] #I:#W#F '
 
       # Window status separator
-      set -g window-status-separator '│'
+      set -g window-status-separator ""
 
       # Pane borders
       set -g pane-border-style 'fg=#45475a'

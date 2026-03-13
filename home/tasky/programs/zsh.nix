@@ -17,6 +17,7 @@
       cat = "bat --plain --pager=none";
       ls = "lsd";
       lg = "lazygit";
+      ch = "lazygit -sm half";
       p = "pnpm";
       g = "git";
       c = "clear";
