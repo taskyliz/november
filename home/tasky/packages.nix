@@ -13,6 +13,7 @@
     uv
     bun
     nodejs_22
+    vite-plus
     go
     zig
     dotnet-sdk_8
