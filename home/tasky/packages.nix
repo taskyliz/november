@@ -12,8 +12,9 @@
     pnpm
     uv
     bun
-    nodejs_22
+    nodejs_24
     vite-plus
+    conceal
     go
     zig
     dotnet-sdk_8
