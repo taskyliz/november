@@ -40,7 +40,10 @@
       ];
 
       git.pagers = [
-        { pager = "delta --dark --paging=never"; }
+        {
+          colorArg = "always";
+          pager = "delta --dark --paging=never";
+        }
       ];
 
       customCommands = [
