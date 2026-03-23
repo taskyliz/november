@@ -17,6 +17,9 @@
     ./programs/zellij.nix
   ];
 
+  # Replace Nix with Lix.
+  nix.package = pkgs.lix;
+
   home.username = "tasky";
   home.homeDirectory = "/home/tasky";
   home.stateVersion = "25.05";

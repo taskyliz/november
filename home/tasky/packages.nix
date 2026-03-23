@@ -12,6 +12,8 @@
     pnpm
     uv
     bun
+    luajit
+    dua
     nodejs_24
     vite-plus
     conceal

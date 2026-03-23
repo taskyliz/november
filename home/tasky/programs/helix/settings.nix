@@ -2,7 +2,7 @@
 
 {
   programs.helix.settings = {
-    theme = "carbon";
+    theme = "catppuccin_mocha";
 
     editor = {
       auto-format = true;

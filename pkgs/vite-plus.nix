@@ -55,6 +55,8 @@ stdenv.mkDerivation {
 
     cp -R ${vitePlusPkg}/lib/node_modules/vite-plus/* $out/lib/vite-plus/
     chmod -R u+w $out/lib/vite-plus
+    substituteInPlace $out/lib/vite-plus/dist/global/create.js \
+      --replace "else fs.copyFileSync(src, dest);" "else { fs.copyFileSync(src, dest); fs.chmodSync(dest, fs.statSync(dest).mode | 0o200); }"
     mkdir -p $out/lib/vite-plus/binding
     tar -xzf ${srcNative} -O package/vite-plus.linux-x64-gnu.node > $out/lib/vite-plus/binding/vite-plus.linux-x64-gnu.node
     ln -s $out/lib/vite-plus $out/lib/vite-plus/node_modules/vite-plus

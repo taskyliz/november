@@ -23,6 +23,7 @@
       c = "clear";
       dust = "dust -r";
       hm = "nix run '.#homeConfigurations.tasky.activationPackage'";
+      ncdu = "dua";
 
       # Tmux aliases
       tn = "tmux new-session -s";
